@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simmer &amp; Serve — a frantic little kitchen</title>
+<style>
+  /* The game is one fixed 1280x800 canvas, pinned to the top-left of the
+     window: no scrolling, no centring shift, so the HUD sits exactly where
+     the game draws it. */
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #241a12;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  canvas {
+    width: 1280px;
+    height: 800px;
+    display: block;
+    background: #f3e2c7;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
